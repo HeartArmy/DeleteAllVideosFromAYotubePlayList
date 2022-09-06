@@ -3,6 +3,9 @@ var list = body.querySelectorAll('#contents .ytd-playlist-video-renderer button'
 function del(i) {
 setTimeout(() => {
 list[i].click();
-body.querySelectorAll("tp-yt-paper-listboxytd-menu-service-item-renderer")[2].click();}, i * 200);
+body.querySelectorAll("tp-yt-paper-listbox ytd-menu-service-item-renderer")[2].click();
+}, i * 200);
 }
-for (let i = 0; i < list.length; i++) del(i);;
+for (let i = 0; i < list.length; i++)
+del(i);;
+
